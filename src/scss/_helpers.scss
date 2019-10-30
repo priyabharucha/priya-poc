@@ -1,0 +1,99 @@
+@import "mixins";
+@import "variables";
+
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 60px;
+}
+
+.top10 {
+    margin-top: 10px;
+}
+.top20 {
+    margin-top: 20px;
+}
+.top30 {
+    margin-top: 30px;
+}
+.top40 {
+    margin-top: 40px;
+}
+.top50 {
+    margin-top: 50px;
+}
+.top100 {
+    margin-top: 100px;
+}
+
+.bottom10 {
+    margin-bottom: 10px;
+}
+.bottom20 {
+    margin-bottom: 20px;
+}
+.bottom30 {
+    margin-bottom: 30px;
+}
+.bottom40 {
+    margin-bottom: 40px;
+}
+.bottom50 {
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 8px 50px !important;
+
+    &.round-btn {
+        @include btn-radius();
+    }
+
+    &.primary-btn {
+        background: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+
+    &.secondary-btn {
+        background: $color-royalblue !important;
+        color: $color-white !important;
+        border: 1px solid $color-royalblue !important;
+    }
+
+    &.bordered-btn {
+        background: $color-white !important;
+        color: $color-royalblue !important;
+        border: 1px solid $color-royalblue !important;
+    }
+}
+
+input, select, textarea, button {
+    outline: 0;
+    &.strech {
+        width: 100%;
+    }
+}
+
+.labeled-text {
+    padding: 8px 30px !important;
+    background: $color-deeplightblue;
+    color: $color-blue !important;
+    border: 1px solid $color-deeplightblue !important;
+    @include btn-radius();
+}

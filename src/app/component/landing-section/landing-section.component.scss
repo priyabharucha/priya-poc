@@ -1,0 +1,82 @@
+@import "../../../scss/variables";
+@import "../../../scss/helpers";
+@import "../../../scss/mixins";
+
+.landing-section {
+    height: calc(100vh - 60px);
+
+    .landing-section-top {
+        @include background-linear-turquoise();
+        padding: 50px 0 100px 0;
+
+        .navbar {
+            padding-left: 0; 
+            color: $color-white;
+
+            .active {
+                color: inherit;
+            }
+        }
+        
+        .welcomeSection {
+            color: $color-white;
+            margin-top: 80px;
+            
+            @media (max-width: 460px) {
+                margin-top: 60px;
+            }
+        }
+
+        
+        .bg-turquoise-45{
+            &::before {
+                content: "";
+                transform: rotate(-135deg);
+                background: $color-turquoise;
+                border-radius: 237px;
+                transform: rotate(-135deg);
+                display: block;
+                height: 850px;
+                width: 350px;
+                position: absolute;
+                top: -70%;
+                left: 42%;
+
+                @media (max-width: 460px) {
+                    display: none;
+                }
+            }
+
+            .eligibility-check-form{
+                // transform: rotate(135deg);
+                background-color: $color-white;
+                padding: 20px;
+                height: 100%;
+                position: absolute;
+
+                .input-fields{
+                    input {
+                        height: 40px;
+                        width: 100%;
+                        border: 0;
+                        border-bottom: 1px solid $color-lightgrey; 
+                        margin-top: 10px;
+                    }
+                }
+
+                @media (max-width: 460px) {
+                    position: relative;
+                }
+            }
+        }
+    }
+    .landing-section-bottom {
+        background: $color-blue;
+        color: $color-white;
+        padding: 30px 0 30px 0;
+
+        img {
+            margin: 20px;
+        }
+    }
+}

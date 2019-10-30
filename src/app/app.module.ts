@@ -5,22 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
-import { AboutUsComponent } from './component/about-us/about-us.component';
-import { HelpComponent } from './component/help/help.component';
+import { HowItWorksComponent } from './component/how-it-works/how-it-works.component';
 import { HeaderComponent } from './component/header/header.component';
 import { AboutUsService } from './service/about-us.service';
 import { OrderByDatePipe } from './pipe/order-by.pipe';
 import { CalculateAgePipe } from './pipe/calculate-age.pipe';
+import { LandingSectionComponent } from './component/landing-section/landing-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutUsComponent,
-    HelpComponent,
+    HowItWorksComponent,
     HeaderComponent,
     OrderByDatePipe,
-    CalculateAgePipe
+    CalculateAgePipe,
+    LandingSectionComponent
   ],
   imports: [
     HttpClientModule,
