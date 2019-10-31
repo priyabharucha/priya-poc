@@ -12,7 +12,6 @@ import { OrderByDatePipe } from './pipe/order-by.pipe';
 import { CalculateAgePipe } from './pipe/calculate-age.pipe';
 import { LandingSectionComponent } from './component/landing-section/landing-section.component';
 
-import { RouterOutletDirective } from './directive/router-outlet.directive';
 
 @NgModule({
   declarations: [
@@ -30,8 +29,7 @@ import { RouterOutletDirective } from './directive/router-outlet.directive';
     AppRoutingModule
   ],
   providers: [
-    AboutUsService,
-    RouterOutletDirective
+    AboutUsService
   ],
   bootstrap: [AppComponent]
 })
