@@ -1,0 +1,75 @@
+@import "../../../scss/variables";
+@import "../../../scss/helpers";
+@import "../../../scss/mixins";
+
+.how-it-works {
+    float: left;
+
+    h2 {
+        margin: 30px !important;
+    }
+
+    .nav-tabs {
+        .nav-item {
+            padding: 30px;
+            background-color: $color-deeplightorange;
+            border-color: $color-deeplightblue;
+            border-radius: 7px 7px 0 0;
+
+            @media (max-width: 480px) {
+                padding: 20px;
+            }
+
+            &:hover {
+                border-color: $color-deeplightblue;
+            }
+
+            &.active {
+                background-color: $color-white;
+                border-bottom: 0;
+            }
+
+            h3 {
+                margin-top: 20px;
+            }
+
+            &.nav-retail-tab {
+                color: $color-blue  ;
+            }
+            &.nav-health-tab {
+                color: $color-turquoise;
+            }
+            &.nav-services-tab {
+                color: $color-orange;
+            }
+
+            &.col-sm-4 {
+                width: calc(100% / 3);
+            }
+        }
+    }
+
+    .tab-content {
+        border: 1px solid $color-deeplightblue;
+        border-top: 0;
+        padding: 50px;
+
+        @media (max-width: 480px) {
+            padding: 20px;
+        }
+        .row {
+            .col-md-4 {
+                padding-left:30px;
+                padding-right:30px;
+            }
+        }
+    }
+
+    .apply-now{
+        margin: 20px 0;
+        @media (max-width: 480px) {
+            
+            width: 100%;
+        }
+    }
+}

@@ -9,12 +9,51 @@
         @include background-linear-turquoise();
         padding: 50px 0 100px 0;
 
+        @media (max-width: 480px) {
+            padding: 0px 0 100px 0;
+        }
+
         .navbar {
             padding-left: 0; 
+            padding-right: 0; 
             color: $color-white;
 
-            .active {
+            .nav-link {
                 color: inherit;
+                &.active {
+                    color: inherit;
+                }
+            }
+
+            .navbar-toggler {
+                border: 0 !important;
+                padding: 0;
+            }
+            .navbar-toggler-icon {
+                background-image: url(../../../assets/img/hamburger.png) !important;
+            }
+
+            @media (max-width: 480px) {
+                .navbar-collapse {
+                    position: absolute;
+                    top: 54px;
+                    left: 100%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    width: 100%;
+                    transition: all 0.4s ease;
+                    display: block;
+                }
+                .navbar-collapse.collapsing {
+                    height: auto !important;
+                    margin-left: 50%;
+                    left: 50%;
+                    transition: all 0.2s ease;
+                }
+                .navbar-collapse.show {
+                    left: 0;
+                }
             }
         }
         
@@ -22,8 +61,16 @@
             color: $color-white;
             margin-top: 80px;
             
-            @media (max-width: 460px) {
-                margin-top: 60px;
+            @media (max-width: 480px) {
+                margin-top: 30px;
+            }
+
+            button {
+                margin-top:40px;
+
+                @media (max-width: 480px) {
+                    margin-top: 20px;
+                }
             }
         }
 
@@ -42,7 +89,7 @@
                 top: -70%;
                 left: 42%;
 
-                @media (max-width: 460px) {
+                @media (max-width: 480px) {
                     display: none;
                 }
             }
@@ -64,8 +111,9 @@
                     }
                 }
 
-                @media (max-width: 460px) {
+                @media (max-width: 480px) {
                     position: relative;
+                    margin-top: 20px;
                 }
             }
         }
@@ -75,8 +123,49 @@
         color: $color-white;
         padding: 30px 0 30px 0;
 
+        @media (max-width: 480px) {
+            float: left;
+        }
+
         img {
             margin: 20px;
         }
+    }
+}
+
+.overlay { 
+    height: 100vh;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: $color-blue; 
+    overflow-x: hidden; 
+    transition: 0.5s;
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+        display: block; 
+        transition: 0.3s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 5%; 
+        width: 100%; 
+        height: calc(100% - 170px);
+        margin-top: 30px; 
+
+        
+    }
+    
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 40px;
+        line-height: 30px;
     }
 }

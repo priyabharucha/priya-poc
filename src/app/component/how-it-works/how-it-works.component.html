@@ -1,3 +1,55 @@
-<p>
-  how-it-works works!
-</p>
+<div #routerOutlet class="how-it-works text-center">
+  <h2>How it works</h2>
+
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="col-md-4 col-sm-4 col-xs-4 nav-item nav-link nav-retail-tab active" id="nav-retail-tab" data-toggle="tab" href="#nav-retail" role="tab" aria-controls="nav-retail" aria-selected="true">
+        <img src="../../../assets/img/scale.png">
+        <h3>Retail</h3>
+      </a>
+      <a class="col-md-4 col-sm-4 col-xs-4 nav-item nav-link nav-health-tab" id="nav-health-tab" data-toggle="tab" href="#nav-retail" role="tab" aria-controls="nav-retail" aria-selected="false">
+        <img src="../../../assets/img/heart.png">
+        <h3>Health</h3>
+      </a>
+      <a class="col-md-4 col-sm-4 col-xs-4 nav-item nav-link nav-services-tab" id="nav-services-tab" data-toggle="tab" href="#nav-retail" role="tab" aria-controls="nav-retail" aria-selected="false">
+        <img src="../../../assets/img/cog.png">
+        <h3>Services</h3>
+      </a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-retail" role="tabpanel" aria-labelledby="nav-retail-tab">
+      <p class="font-size-lg ">
+          Online or instore, give your customers the power to pay 
+          <br/>
+          their way and see your sales grow.
+      </p>
+      <div class="row top40">
+        <div class="col-md-4">
+          <h3>Get ready</h3>
+          <p>
+            Apply and you could be accepting Zip within 24 hours. Once you’re approved, we’ll integrate Zip’s free plugins to your website, you can also use your Zip dashboard for instore payments.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3>Get set</h3>
+          <p>
+              Your customer then chooses selects Zip at checkout, either online or instore. You capture and process the purchase as usual.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3>Get paid</h3>
+          <p>
+              We pay you directly into your bank account via EFT the next business day, minus the small merchant fee. The customer pays us back over time so we bear the risk.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center">
+      <a class="btn secondary-btn round-btn apply-now" href routerLink = "" >Apply now</a>
+    </div>
+  </div>
+</div>

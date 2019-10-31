@@ -1,14 +1,19 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light header">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light header" #header>
   <div class="container">
-    <a class="navbar-brand" href routerLink = ""><img src="../../assets/img/logo_bubble.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand hidden-xs" href routerLink = ""><img src="../../assets/img/logo_bubble.png"></a>
+    <ul class="navbar-nav mobile-sticky-menu">
+      <li class="nav-item col-xs-6">
+        <a class="nav-link btn secondary-btn round-btn" href routerLink = "" >App!</a>
+      </li>
+      <li class="nav-item col-xs-6">
+        <a class="nav-link btn bordered-btn round-btn" href routerLink = "" >Contact sales</a>
+      </li>
+    </ul>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav hidden-xs">
         <li class="nav-item ">
-          <span class="nav-link labeled-text" >Welcome to Zip </span>
+          <span class="nav-link labeled-text" >Welcome to Zip </span> 
         </li>
         <li class="nav-item">
           <a class="nav-link" href routerLink = "how-it-works" routerLinkActive="active">How it works</a>
@@ -16,7 +21,7 @@
       </ul>
 
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item hidden-xs">
           <a class="nav-link" href routerLink = "" >Start accepting Zip today</a>
         </li>
         <li class="nav-item">

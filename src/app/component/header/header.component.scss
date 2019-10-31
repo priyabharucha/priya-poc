@@ -19,5 +19,27 @@
                 color: inherit;
             }
         }
+
+        .mobile-sticky-menu {
+            display: none;
+
+            @media (max-width: 480px) {
+                display: block;
+                &.navbar-nav{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+
+                    .nav-item {
+                        width: 50%;
+                        margin: 5px;
+
+                        .btn {
+                            padding: 8px 25px !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
