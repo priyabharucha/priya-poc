@@ -16,7 +16,7 @@
             border-color: $color-deeplightblue;
             border-radius: 7px 7px 0 0;
 
-            @media (max-width: 480px) {
+            @media (max-width: $screen-xs) {
                 padding: 20px;
             }
 
@@ -54,7 +54,7 @@
         border-top: 0;
         padding: 50px;
 
-        @media (max-width: 480px) {
+        @media (max-width: $screen-xs) {
             padding: 20px;
         }
         .row {
@@ -67,7 +67,7 @@
 
     .apply-now{
         margin: 20px 0;
-        @media (max-width: 480px) {
+        @media (max-width: $screen-xs) {
             
             width: 100%;
         }

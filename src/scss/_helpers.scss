@@ -8,7 +8,7 @@ html {
 body {
     overflow-x: hidden;
 
-    @media (max-width: 480px) {
+    @media (max-width: $screen-xs) {
         font-size: 15px;
     }
 }
@@ -19,19 +19,19 @@ input, select, textarea, button, a {
 
 h1 {
     font-size: 60px;
-    @media (max-width: 480px) {
+    @media (max-width: $screen-xs) {
         font-size: 40px;
     }
 }
 h2 {
     font-size: 48px;
-    @media (max-width: 480px) {
+    @media (max-width: $screen-xs) {
         font-size: 28px;
     }
 }
 h3 {
     font-size: 24px;
-    @media (max-width: 480px) {
+    @media (max-width: $screen-xs) {
         font-size: 17px;
     }
 }
@@ -133,7 +133,7 @@ input, select, textarea, button {
 }
 
 .hidden-xs {
-    @media (max-width: 480px) {
+    @media (max-width: $screen-sm) {
         display: none;
     }
 }

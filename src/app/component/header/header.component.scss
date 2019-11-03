@@ -11,6 +11,10 @@
             padding: 0 !important;
             img {
                 height: 44px;
+
+                @media (max-width: $screen-md) {
+                    display: none;
+                }
             }
         }
         .nav-item {
@@ -23,7 +27,7 @@
         .mobile-sticky-menu {
             display: none;
 
-            @media (max-width: 480px) {
+            @media (max-width: $screen-md) {
                 display: block;
                 &.navbar-nav{
                     width: 100%;

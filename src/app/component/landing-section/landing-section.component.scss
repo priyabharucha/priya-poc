@@ -9,7 +9,7 @@
         @include background-linear-turquoise();
         padding: 50px 0 100px 0;
 
-        @media (max-width: 480px) {
+        @media (max-width: $screen-sm) {
             padding: 0px 0 100px 0;
         }
 
@@ -32,43 +32,20 @@
             .navbar-toggler-icon {
                 background-image: url(../../../assets/img/hamburger.png) !important;
             }
-
-            @media (max-width: 480px) {
-                .navbar-collapse {
-                    position: absolute;
-                    top: 54px;
-                    left: 100%;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                    padding-bottom: 15px;
-                    width: 100%;
-                    transition: all 0.4s ease;
-                    display: block;
-                }
-                .navbar-collapse.collapsing {
-                    height: auto !important;
-                    margin-left: 50%;
-                    left: 50%;
-                    transition: all 0.2s ease;
-                }
-                .navbar-collapse.show {
-                    left: 0;
-                }
-            }
         }
         
         .welcomeSection {
             color: $color-white;
             margin-top: 80px;
             
-            @media (max-width: 480px) {
+            @media (max-width: $screen-sm) {
                 margin-top: 30px;
             }
 
             button {
                 margin-top:40px;
 
-                @media (max-width: 480px) {
+                @media (max-width: $screen-sm) {
                     margin-top: 20px;
                 }
             }
@@ -89,7 +66,7 @@
                 top: -70%;
                 left: 42%;
 
-                @media (max-width: 480px) {
+                @media (max-width: $screen-sm) {
                     display: none;
                 }
             }
@@ -111,7 +88,7 @@
                     }
                 }
 
-                @media (max-width: 480px) {
+                @media (max-width: $screen-sm) {
                     position: relative;
                     margin-top: 20px;
                 }
@@ -122,10 +99,9 @@
         background: $color-blue;
         color: $color-white;
         padding: 30px 0 30px 0;
+        float: left;
+        width: 100%;
 
-        @media (max-width: 480px) {
-            float: left;
-        }
 
         img {
             margin: 20px;
